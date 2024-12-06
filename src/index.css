@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900;
+  }
+}
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Menu animation styles */
+.menu-item-enter {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.menu-item-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 300ms ease-in-out;
+}
+
+.menu-overlay-enter {
+  opacity: 0;
+}
+
+.menu-overlay-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.desktop-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.desktop-swiper {
+  overflow: hidden;
+}
