@@ -1,0 +1,283 @@
+/* Custom styles extracted from inline styles and style tags */
+
+/* Ant Design styles */
+:where(.css-1x0dypw) a {
+    color: #1677ff;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    -webkit-text-decoration-skip: objects;
+}
+
+:where(.css-1x0dypw) a:hover {
+    color: #69b1ff;
+}
+
+:where(.css-1x0dypw) a:active {
+    color: #0958d9;
+}
+
+:where(.css-1x0dypw) a:active,
+:where(.css-1x0dypw) a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+:where(.css-1x0dypw) a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+:where(.css-1x0dypw) a[disabled] {
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+}
+
+:where(.css-1x0dypw).ant-app {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 14px;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.88);
+    line-height: 1.5714285714285714;
+}
+
+:where(.css-1x0dypw).ant-app::before,
+:where(.css-1x0dypw).ant-app::after {
+    box-sizing: border-box;
+}
+
+:where(.css-1x0dypw).ant-app [class^="ant-app"],
+:where(.css-1x0dypw).ant-app [class*=" ant-app"] {
+    box-sizing: border-box;
+}
+
+:where(.css-1x0dypw).ant-app [class^="ant-app"]::before,
+:where(.css-1x0dypw).ant-app [class*=" ant-app"]::before,
+:where(.css-1x0dypw).ant-app [class^="ant-app"]::after,
+:where(.css-1x0dypw).ant-app [class*=" ant-app"]::after {
+    box-sizing: border-box;
+}
+
+:where(.css-1x0dypw).ant-app.ant-app-rtl {
+    direction: rtl;
+}
+
+/* Anticon styles */
+.anticon {
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.anticon > * {
+    line-height: 1;
+}
+
+.anticon svg {
+    display: inline-block;
+}
+
+.anticon .anticon .anticon-icon {
+    display: block;
+}
+
+/* Body reset */
+body {
+    margin: 0px;
+}
+
+/* LinkedIn extension styles */
+.lkdin_ext_container * {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.lkdin_ext_container_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #0047ab;
+    padding: 0px 20px;
+}
+
+.lkdin_ext_container_header svg {
+    cursor: pointer;
+}
+
+.lkdin_ext_container_close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.lkdin_ext_resume_warning {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px;
+    border-radius: 16px;
+    background: #fef0c7;
+    gap: 12px;
+    width: 97%;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.lkdin_ext_resume_warning_badge {
+    border-radius: 16px;
+    background: #fffaeb;
+    display: flex;
+    padding: 2px 10px;
+    justify-content: center;
+    align-items: center;
+    color: #b54708;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    width: 170px;
+}
+
+.lkdin_ext_resume_warning_text p {
+    color: #b54708;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+.lkdin_ext_resume_warning_text span {
+    color: #444;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 2px;
+}
+
+/* Additional extension styles continue... */
+.cLD4YbNqIJl6u2ZcPFOp {
+    background: #fff;
+    box-shadow: 3px 3px 8px 8px rgba(0, 0, 0, .1);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    color: #152c5b;
+    align-items: center;
+    border-radius: 1rem;
+    min-width: 30vw;
+    align-items: center;
+}
+
+/* Search resume input styles */
+.searchResumeInput input {
+    outline: none !important;
+    color: #000 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Skill section styles */
+.skillSection > .ant-collapse-header {
+    border-bottom: 1px solid #e1edff;
+}
+
+/* Minerva extension styles */
+#minerva_extension_handle {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 2147483646;
+    height: 100vh;
+}
+
+.minerva_extension_handle_inner {
+    width: 0px;
+    background-color: #f8fbfe;
+    height: 100%;
+}
+
+.minerva_extension_handle_inner_position {
+    position: absolute;
+    right: 5px;
+    top: 57vh;
+    display: flex;
+    width: 52px;
+    height: 52px;
+    background: #d2d2d2;
+    border-radius: 100px 100px 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.minerva_extension_handle_inner_container {
+    border-radius: 100px;
+    width: 43px;
+    height: 43px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.minerva_extension_handle_inner_container:hover {
+    box-shadow: rgba(100, 100, 111, .2) 0px 7px 29px 0px;
+}
+
+/* Spinner animation */
+.spinner {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: conic-gradient(rgba(0, 0, 0, 0) 10%, #f5f5f5);
+    -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 3.8px), #000 0);
+    animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Autofill button */
+#minerva_extension_autofill_button {
+    display: flex;
+    width: 161px;
+    height: 26px;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+    color: #5925dc;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 16px;
+    background: #eae9ff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
