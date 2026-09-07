@@ -1,0 +1,26 @@
+name: Build CV PDF
+
+on:
+  push:
+    paths:
+      - cv/cv.tex
+      - .github/workflows/build-cv.yml
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+          working_directory: cv
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Rebuild CV PDF from cv.tex
+          file_pattern: cv/cv.pdf
