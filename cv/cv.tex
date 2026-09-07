@@ -1,0 +1,292 @@
+\documentclass[10pt,a4paper]{article}
+% page margin
+% \usepackage[a4paper,margin=0.7in]{geometry}
+\usepackage[a4paper,margin=0.4in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+% 
+\setlist[itemize]{itemsep=1pt, topsep=1pt}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+% Global Paragraph Spacing
+% \setlength{\parskip}{3pt}
+\setlength{\parskip}{1pt}
+%====================
+% Section Styling
+%====================
+
+\titleformat{\section}
+{\large\bfseries}
+{}{0em}{}
+[\titlerule]
+% section title spacing
+% \titlespacing{\section}{0pt}{10pt}{5pt}
+% \titlespacing{\section}{0pt}{6pt}{3pt}
+\titlespacing{\section}{0pt}{2pt}{1pt}
+
+%====================
+% Custom Commands
+%====================
+
+\newcommand{\resumeSubheading}[4]{
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{#4}
+}
+
+\begin{document}
+
+%====================
+% Header
+%====================
+
+% {\LARGE \textbf{MOHAMMED KASHIF}} \\
+% \vspace{-4pt} \\
+% Bangalore, India 
+% \;|\;
+% \href{mailto:kashifmohammed04@gmail.com}{kashifmohammed04@gmail.com}
+% \;|\;
+% +91 9156026054
+% \;|\;
+% \href{https://www.linkedin.com/in/kashifmd2023iit}{LinkedIn}
+% \;|\;
+% \href{https://github.com/KASHIFMD}{GitHub}
+
+
+\begin{center}
+
+{\LARGE \textbf{MOHAMMED KASHIF}} \\
+
+\vspace{4pt}
+
+Bangalore, India
+\;|\;
+\href{mailto:kashifmohammed04@gmail.com}{kashifmohammed04@gmail.com}
+\;|\;
++91 9156026054
+\;|\;
+\href{https://www.linkedin.com/in/kashifmd2023iit}{LinkedIn}
+\;|\;
+\href{https://github.com/KASHIFMD}{GitHub}
+
+\end{center}
+
+%====================
+% Summary
+%====================
+\vspace{-14pt}
+\section{Summary}
+Built and scaled GPU inference systems processing \textbf{80M+ images} at \textbf{2.5M inferences/day}; reduced LLM token costs by \textbf{60--80\%} and lifted search CTR by \textbf{6\%} through image relevancy and multi-modal model orchestration at scale.
+
+% AI/ML Engineer specializing in inference infrastructure, hybrid retrieval systems, and GPU-optimized serving for large-scale multimodal workloads. Experienced in architecting production AI platforms spanning high-throughput inference, ANN-based retrieval, and event-driven distributed systems.
+
+% AI/ML Engineer specializing in distributed inference infrastructure, hybrid retrieval architectures, and GPU-optimized serving systems for large-scale multimodal workloads. Experienced in architecting production AI platforms spanning high-throughput GPU inference, ANN-based retrieval systems, and event-driven distributed pipelines operating at tens-of-millions scale. Focused on inference acceleration, infrastructure reliability, deployment reproducibility, and cost-efficient AI systems.
+
+%====================
+% Education
+%====================
+\vspace{-2pt}
+\section{Education}
+\resumeSubheading
+{Indian Institute of Technology (IIT), Kharagpur}
+{Jul 2021 -- May 2023}
+{M.Tech in Computer Science and Data Processing}
+{\textbf{CGPA: 9.11/10}}
+
+\vspace{0pt}
+{\small Published research in an IEEE international conference on instrumentation and intelligent systems.}
+
+%====================
+% Experience
+%====================
+\vspace{-4pt}
+\section{Experience}
+
+\resumeSubheading
+{JustDial}
+{Jan 2024 -- Present}
+{\textbf{AI/ML Engineer}}
+{Bangalore, India}
+
+\vspace{0pt}
+\textbf{Inference Infrastructure \& ML Systems}
+% Bullet Point Spacing
+% \begin{itemize}[leftmargin=*, itemsep=3pt, topsep=3pt]
+% \begin{itemize}[leftmargin=*, itemsep=1pt, topsep=0pt]
+\begin{itemize}[leftmargin=*,
+itemsep=1pt,
+topsep=0pt,
+parsep=1pt,
+partopsep=1pt]
+
+\item Architected a \textbf{distributed GPU-Accelerated Inference platform} using Kafka-based orchestration using CPU/GPU execution tiers, enabling scalable processing of \textbf{80M+ images} across 15 business verticals with independently scalable inference workers. Enabling scalable multi-LoRA inference for live processing while reducing memory footprint by $\sim$92\%.
+
+% \item Architected a \textbf{distributed GPU-Accelerated Inference platform} using Kafka-based orchestration with CPU/GPU execution tiers, enabling scalable multi-LoRA inference for \textbf{80M+ images} while reducing memory footprint by $\sim$92\%.
+
+\item Productionized high-throughput multimodal inference pipelines for 25K+ categories using SigLIP2 deep learning ONNX Runtime, on GPUs, sustaining \textbf{2.5M image} inferences/day with Milvus-backed retrieval and optimized batch scheduling.
+
+\item Fine-tuned 6 SigLIP2 classification models using LoRA-based PEFT training on 4K-6K image-text pairs to build a multimodal classification system across business verticals. Acheiving classification accuracy in the range of \textbf{86\% to 98\%}.
+
+
+% \item Orchestrated reproducible multi-GPU deployment workflows with containerized inference environments and automated orchestration pipelines, reducing per-server provisioning time  by \textbf{75\%}.
+
+% \item Orchestrated reproducible multi-GPU deployment workflows with containerized inference environments and automated orchestration pipelines, reducing per-server provisioning time from \textbf{30 minutes to 5 minutes} and cutting multi-node rollout overhead by \textbf{75\%}.
+
+\item \textbf{Optimized LLM/VLM serving pipelines} using \textbf{TensorRT-LLM} and Triton Inference Server through FP16 quantization, KV-cache reuse, and concurrent request batching, achieving \textbf{74\% higher inference throughput} under multi-user GPU workloads.
+
+% \item Improved GPU resource utilization and inference concurrency through optimized request batching and asynchronous execution strategies for production-scale multimodal serving workloads.
+
+\end{itemize}
+
+\vspace{0pt}
+\textbf{Retrieval \& LLM Systems}
+
+% \begin{itemize}[leftmargin=*, itemsep=3pt, topsep=3pt]
+\begin{itemize}[leftmargin=*,
+itemsep=1pt,
+topsep=0pt,
+parsep=1pt,
+partopsep=1pt]
+
+\item Implemented a production \textbf{hybrid retrieval architecture} combining Elasticsearch lexical retrieval with Qdrant-based semantic ANN search, reducing LLM token consumption by \textbf{60--80\%} while improving retrieval precision and response relevance in conversational workflows.
+
+\item Developed embedding-driven image retrieval and ranking systems validated through A/B testing, contributing to a \textbf{7--8\% QoQ CTR uplift} and enabling zero-shot category onboarding through semantic clustering architectures.
+
+
+% \item Architected and productionized Justdial AI Search to transform ambiguous natural-language queries into structured category/company intents and filter-ready search payloads using multi-model LLM orchestration, semantic attribute matching, and guardrail-aware async pipelines, improving intent classification accuracy from 83\% to 95\%, reducing zero-result searches by 14\%, and increasing AI-search CTR/lead conversion by 6\%.
+
+\item Architected and productionized Justdial AI Search using \textbf{multi-model LLM orchestration} and \textbf{semantic retrieval pipelines} to transform ambiguous queries into structured search intents, improving intent classification accuracy from \textbf{83\% to 95\%}, reducing zero-result searches by 14\%, and increasing AI-search CTR/lead conversion by 6\%.
+
+
+% \item Architected and productionized Justdial AI Search to transform ambiguous natural-language queries into structured category/company intents and filter-ready search payloads using multi-model LLM orchestration and semantic retrieval pipelines, improving intent classification accuracy from 83\% to 95\%.
+
+% \item Engineered guardrail-aware asynchronous inference workflows and semantic attribute-matching pipelines that reduced zero-result searches by 14\% and increased AI-search CTR/lead conversion by 6\% through higher-precision query normalization and structured search resolution.
+
+\end{itemize}
+
+\vspace{0pt}
+\textbf{Media Processing Infrastructure}
+
+% \begin{itemize}[leftmargin=*, itemsep=3pt, topsep=3pt]
+\begin{itemize}[leftmargin=*,
+itemsep=1pt,
+topsep=0pt,
+parsep=1pt,
+partopsep=1pt]
+
+\item Designed and deployed an event-driven distributed \textbf{HLS transcoding} platform using RabbitMQ and FFmpeg, processing \textbf{106K videos/month} into adaptive bitrate streams with asynchronous media processing pipelines.
+
+\item Engineered scalable content-adaptive video encoding infrastructure processing \textbf{4.5M minutes/month}, \textbf{replacing AWS MediaConvert} with an on-premise distributed transcoding system to improve infrastructure control and reduce external processing dependency.
+\end{itemize}
+
+\resumeSubheading
+{Cropin Technologies}
+{Nov 2023 -- Jan 2024}
+{\textbf{Data Engineer Intern}}
+{Bangalore, India}
+\begin{itemize}[leftmargin=*,
+itemsep=1pt,
+topsep=0pt,
+parsep=0pt,
+partopsep=0pt]
+
+% \item Built multi-class \textbf{leaf disease classifiers} in \textbf{PyTorch (ResNet9/18)} and Hugging Face ViT; achieved on PlantVillage with ResNet9 and \textbf{89\% accuracy} on 44-class ViT evaluation, with hybrid class classification.
+% \item Built multi-class \textbf{leaf disease classifiers} in \textbf{PyTorch (ResNet9/18)} and \textbf{Hugging Face ViT} using \textbf{hybrid two-level classification} (plant identification, disease/healthy within plant); achieved \textbf{$\sim$99\% accuracy} on PlantVillage (ResNet9) and \textbf{89\% average accuracy} on 2nd layer ViT evaluation.
+
+\item Developed multi-class \textbf{crop disease classifier} using \textbf{PyTorch (ResNet9/18)} and \textbf{Hugging Face ViT} with a \textbf{two-stage hierarchical architecture}: Crop identification and crop-specific disease classification; achieved \textbf{$\sim$99\% accuracy} on PlantVillage crop classification and \textbf{89\% average accuracy} on downstream disease classification tasks using ViT.
+
+
+  % \item Developed an \textbf{automated image-annotation workflow} using \textbf{CVAT}, \textbf{SAM (Segment Anything)}, \textbf{AWS S3}, and \textbf{YOLOv8} serverless pre-labeling to create tasks, attach field images, generate segment/mask annotations, and export enriched \textbf{XML/JSON} with farmer, crop-stage, and geolocation metadata---reducing manual labeling effort for BASF field imagery.
+
+% \item Engineered scalable content-adaptive video encoding infrastructure processing 4.5M minutes/month, replacing AWS MediaConvert with an on-premise distributed transcoding system to improve infrastructure control and reduce external processing dependency.
+
+\end{itemize}
+
+
+%====================
+% Projects
+%====================
+\section{Projects}
+\resumeSubheading
+{AI-Powered Multimodal Content Platform}
+{Jun 2023 -- Nov 2023}
+{Core Architect and Developer}
+{}
+\vspace{-2pt}
+\begin{itemize}[leftmargin=*,
+itemsep=1pt,
+topsep=0pt,
+parsep=1pt,
+partopsep=0pt]
+\item Architected and deployed a \textbf{zero-to-production} modular database schema and \textbf{25+ core REST APIs} in Flask; implemented secure HTTPS exposure, real-time analytics, and structured preference routing for live traffic.
+
+\item Engineered an automated data pipeline processing \textbf{3K+ daily articles}, integrating LLM summarization, multi-class categorization, and \textbf{embedding-driven image retrieval} to reduce processing overhead by \textbf{~80\%}.
+
+\item Built automated \textbf{GitHub Actions CI/CD} pipelines to deploy containerized \textbf{Docker} services onto \textbf{AWS} infrastructure; integrated \textbf{Prometheus} monitoring to guarantee a strict \textbf{sub-250 ms P95 latency} SLA.
+% \item Engineered a modular Flask backend with 25+ core REST APIs; designed transactional database schemas explicitly optimized to eliminate data-access bottlenecks during \textbf{high-throughput daily feed} reads.
+
+% \item Architected an event-driven ingestion engine \textbf{combining LLM summarization, multi-class classification}, and embedding-driven multimodal alignment to process 3K+ daily articles, cutting manual overhead by \textbf{$\sim$80\%}.
+
+% \item Deployed containerized services via Docker and \textbf{GitHub Actions CI/CD}; optimized computational graph pathways and tensor execution layers to guarantee a \textbf{sub-250 ms} P95 latency footprint on core feed endpoints.
+
+
+
+% \item Conceptualized and engineered the end-to-end system architecture from scratch; designed a modular database layer and built 25+ core REST APIs in Flask to handle user authentication, structured preference routing, and real-time feed analytics.
+
+% \item Architected an automated data ingestion pipeline integrating LLM-based summarization, multi-class text categorization, and embedding-driven multimodal image matching to process 3K+ daily articles, reducing manual content processing overhead by $\sim$80\%.
+
+% \item Deployed containerized services via Docker and built automated GitHub Actions CI/CD workflows with secure HTTPS exposure, achieving a sub-250 ms P95 latency footprint on core feed execution paths.
+
+% \item \textbf{Founding Engineer} leading end-to-end system architecture from zero to production; built a modular Flask backend with 25+ core REST APIs across user authentication, preferences and analytics to support active daily user feeds.
+
+% \item Architected an automated ingestion engine integrating LLM based summarization, multi-class categorization, and embedding-driven multimodal image matching to process 3K+ daily articles reducing operational overhead by \textbf{$\sim$80\%}.
+
+% \item Deployed containerized services via Docker and built automated GitHub Actions CI/CD pipelines with robust monitoring and secure HTTPS exposure, achieving a sub-250 ms P95 latency footprint on core feed execution paths.
+
+
+% \item Designed and deployed mobile app backend 25+ REST APIs in Flask for an AI-powered news platform covering authentication, feeds, preferences, interactions, notifications, and analytics using MySQL and MongoDB, serving ~750 MAU / ~250 DAU through a modular backend architecture. 
+
+% \item Built an automated ingestion pipeline across publishers using OpenAI-based summarization, categorization, and embedding-driven image matching, processing 3K+ articles/day while reducing manual effort by ~80\%. 
+
+% \item Containerized backend services using Docker and implemented GitHub Actions CI/CD with automated deployment, HTTPS exposure, and monitoring and <250 ms P95 latency on core feed APIs.
+
+
+% \item \textbf{Founding Engineer} leading end-to-end system architecture and product delivery from zero to production; engineered a modular, high-availability Flask backend managing 25+ core REST APIs across authentication, user preferences, and real-time analytics to seamlessly support active daily user feeds.
+
+% \item Architected an automated data ingestion and pipeline orchestration engine across diverse publishers, integrating OpenAI-based text summarization, multi-class categorization, and embedding-driven multimodal image matching to process 3K+ daily articles while reducing manual operational overhead by $\sim$80\%.
+
+% \item Deployed containerized microservices using Docker and built automated GitHub Actions CI/CD pipelines featuring robust monitoring, zero-downtime rollouts, and secure HTTPS exposure—achieving a sub-250 ms P95 latency footprint on core, high-throughput feed execution paths.
+
+\end{itemize}
+
+
+%====================
+% Skills
+%====================
+
+\section{Technical Skills}
+
+\textbf{AI Infrastructure \& Inference:}
+TensorRT-LLM, Triton Inference Server, ONNX Runtime, GPU Inference, Quantization, KV Cache Optimization, High-Throughput Serving \par\vspace{0pt}
+
+\textbf{Retrieval \& Search Systems:} Hybrid Search, RAG Systems, vector databases Elasticsearch, Dense Vector Retrieval \par\vspace{0pt}
+
+\textbf{ML Frameworks:}
+PyTorch \par\vspace{0pt}
+
+\textbf{Distributed Systems:}
+Kafka, RabbitMQ, Redis, Event-Driven Architectures \par\vspace{0pt}
+
+\textbf{Languages:}
+Python, C++, Go, SQL \par\vspace{0pt}
+
+\textbf{Infrastructure \& Tooling:}
+Docker, FastAPI, Flask, AWS, FFmpeg, Git
+
+\end{document}
